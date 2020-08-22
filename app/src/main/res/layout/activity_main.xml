@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#000">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        app:title="@string/app_name"
+        app:titleTextColor="#fff"
+        android:background="#000"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="#5A5656"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FF5722"
+        android:text="Music On!!"
+        android:gravity="center"
+        android:textSize="30sp"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_one"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_margin="10dp"
+                android:elevation="2dp"
+                app:cardCornerRadius="32dp"
+                android:backgroundTint="#BC222222">
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:gravity="center_vertical">
+                   <ImageView
+                       android:id="@+id/iv_drum1"
+                       android:layout_width="40dp"
+                       android:layout_height="40dp"
+                       android:layout_marginStart="20dp"
+                       android:src="@drawable/sound"
+                       android:scaleType="centerCrop"
+                       android:contentDescription="@string/image1" />
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Drumpad 1"
+                       android:textColor="#fff"
+                       android:layout_marginStart="40dp"
+                       android:layout_toEndOf="@+id/iv_drum1"
+                       android:textSize="30sp"/>
+               </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_margin="10dp"
+                android:elevation="2dp"
+                app:cardCornerRadius="32dp"
+                android:background="@drawable/card"
+                android:backgroundTint="#BC222222">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical">
+                    <ImageView
+                        android:id="@+id/iv_drum2"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="20dp"
+                        android:src="@drawable/multimedia"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@string/image1" />
+                    <TextView
+                        android:id="@+id/tv_dm2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Drumpad 2"
+                        android:textColor="#fff"
+                        android:layout_marginStart="40dp"
+                        android:layout_toEndOf="@+id/iv_drum2"
+                        android:textSize="30sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Coming Soon"
+                        android:textColor="#fff"
+                        android:layout_marginStart="2dp"
+                        android:layout_toEndOf="@+id/tv_dm2"
+                        android:textSize="15sp"/>
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_margin="10dp"
+                android:elevation="2dp"
+                app:cardCornerRadius="32dp"
+                android:background="@drawable/card"
+                android:backgroundTint="#BC222222">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical">
+                    <ImageView
+                        android:id="@+id/iv_drum3"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="20dp"
+                        android:src="@drawable/india"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@string/image1" />
+                    <TextView
+                        android:id="@+id/tv_tbl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tabla"
+                        android:textColor="#fff"
+                        android:layout_marginStart="40dp"
+                        android:layout_toEndOf="@+id/iv_drum3"
+                        android:textSize="30sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Coming Soon"
+                        android:textColor="#fff"
+                        android:layout_marginStart="2dp"
+                        android:layout_toEndOf="@+id/tv_tbl"
+                        android:textSize="15sp"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_guns"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_margin="10dp"
+                android:elevation="2dp"
+                app:cardCornerRadius="32dp"
+                android:background="@drawable/card"
+                android:backgroundTint="#BC222222">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical">
+                    <ImageView
+                        android:id="@+id/iv_gun"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="20dp"
+                        android:src="@drawable/pistol"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="@string/image1" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Guns"
+                        android:textColor="#fff"
+                        android:layout_marginStart="40dp"
+                        android:layout_toEndOf="@+id/iv_gun"
+                        android:textSize="30sp"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

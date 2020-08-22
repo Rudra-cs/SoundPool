@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_guns"
+    tools:context=".screenOne"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/colorPrimary"
+    android:padding="10dp">
+
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:layout_marginBottom="30dp">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textSize="30sp"
+           android:text="PUBG"
+           android:textColor="#FFC107"/>
+
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/akm"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="onClick"
+            android:background="@drawable/akm"
+            tools:ignore="OnClick" />
+        <ImageButton
+            android:id="@+id/awm"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="onClick"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/awm"
+            android:scaleType="fitCenter"
+            tools:ignore="OnClick" />
+        <ImageButton
+            android:id="@+id/scarl"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="onClick"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/scarl"
+            tools:ignore="OnClick"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/kar98k"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            tools:ignore="OnClick"
+            android:onClick="onClick"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/kar98k"
+            />
+        <ImageButton
+            android:id="@+id/uzi"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="onClick"
+            tools:ignore="OnClick"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/uzi"/>
+        <ImageButton
+            android:id="@+id/s12k"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="onClick"
+            tools:ignore="OnClick"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/s12k"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/flare"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="onClick"
+            tools:ignore="OnClick"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/flare"
+            />
+        <ImageButton
+            android:id="@+id/m249"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="onClick"
+            tools:ignore="OnClick"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/m249"/>
+        <ImageButton
+            android:id="@+id/mini14"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="onClick"
+            tools:ignore="OnClick"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/mini14"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
